@@ -24,9 +24,9 @@ public class StatsService {
     public long buyMax(long[] purchases) {
         long maxValue = purchases[0];
         long maxBuyMonthNumber = 0;
-        for (long i = 0; i < purchases.length; i++) {
-            if (maxValue <= purchases[(int) i]) {
-                maxValue = purchases[(int) i];
+        for ( int i = 0; i < purchases.length; i++) {
+            if (maxValue <= purchases[i]) {
+                maxValue = purchases[i];
                 maxBuyMonthNumber = i + 1;
             }
         }
@@ -36,9 +36,9 @@ public class StatsService {
      public long buyMin(long[] purchases) {
         long minValue = purchases[0];
         long minBuyMonthNumber = 0;
-        for (long i = 0; i < purchases.length; i++) {
-            if (minValue >= purchases[(int) i]) {
-                minValue = purchases[(int) i];
+        for (int i = 0; i < purchases.length; i++) {
+            if (minValue >= purchases[i]) {
+                minValue = purchases[i];
                 minBuyMonthNumber = i + 1;
             }
         }
